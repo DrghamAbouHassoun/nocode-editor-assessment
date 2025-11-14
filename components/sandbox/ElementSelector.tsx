@@ -34,6 +34,7 @@ export default function ElementSelector({ isEnabled, onElementSelected }: Elemen
       e.stopPropagation()
 
       const target = e.target as HTMLElement
+      console.log('target: ', target)
 
       if (target === overlayRef.current || target.closest('[data-element-selector]')) {
         return
